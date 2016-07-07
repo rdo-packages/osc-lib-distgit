@@ -43,7 +43,6 @@ BuildRequires:  python-os-testr
 BuildRequires:  python-testtools
 BuildRequires:  python-osprofiler
 BuildRequires:  python-oslo-utils
-BuildRequires:  bandit
 BuildRequires:  python-os-client-config
 BuildRequires:  python-requests
 BuildRequires:  python-simplejson
@@ -110,7 +109,6 @@ BuildRequires:  python3-requests-mock
 BuildRequires:  python3-os-testr
 BuildRequires:  python3-testtools
 BuildRequires:  python3-oslo-utils
-BuildRequires:  bandit
 BuildRequires:  python3-os-client-config
 BuildRequires:  python3-requests
 BuildRequires:  python3-simplejson
