@@ -11,8 +11,8 @@
 %global module osc_lib
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    1.1.0
+Release:    1%{?dist}
 Summary:    OpenStack library for writing OSC plugins
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{library}/
@@ -204,3 +204,6 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
+* Sun Sep 11 2016 Haikel Guemar <hguemar@fedoraproject.org> 1.1.0-1
+- Update to 1.1.0
+
