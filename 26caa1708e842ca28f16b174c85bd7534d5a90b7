@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "facab960_4c8f0024",
+        "filename": "python-osc-lib.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2016-09-12T17:18:08Z",
+      "side": 1,
+      "message": "Do we need to update release also for newton-rdo?",
+      "range": {
+        "startLine": 15,
+        "startChar": 12,
+        "endLine": 15,
+        "endChar": 21
+      },
+      "revId": "26caa1708e842ca28f16b174c85bd7534d5a90b7",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
