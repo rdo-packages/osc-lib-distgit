@@ -47,7 +47,6 @@ BuildRequires:  python-os-client-config
 BuildRequires:  python-requests
 BuildRequires:  python-simplejson
 BuildRequires:  python-stevedore
-BuildRequires:  python-backports-ssl_match_hostname
 
 Requires:   python-oslo-config >= 2:3.4.0
 Requires:   python-six >= 1.9.0
@@ -60,7 +59,6 @@ Requires:   python-oslo-utils >= 3.16.0
 Requires:   python-requests >= 2.10.0
 Requires:   python-simplejson >= 2.2.0
 Requires:   python-stevedore >= 1.16.0
-Requires:   python-backports-ssl_match_hostname
 
 %description -n python2-%{library}
 osc-lib is a package of common support modules for writing OSC plugins.
