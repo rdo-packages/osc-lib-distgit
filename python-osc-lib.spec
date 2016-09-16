@@ -17,7 +17,7 @@ Summary:    OpenStack library for writing OSC plugins
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{library}/
 
-Source0:    http://tarballs.openstack.org/%{library}/%{library}-%{upstream_version}.tar.gz
+Source0:    https://tarballs.openstack.org/%{library}/%{library}-%{upstream_version}.tar.gz
 
 BuildArch:  noarch
 
