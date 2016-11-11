@@ -67,6 +67,15 @@ osc-lib is a package of common support modules for writing OSC plugins.
 %package -n python2-%{library}-tests
 Summary:    OpenStack osc-lib library tests
 Requires:   python2-%{library} = %{version}-%{release}
+Requires:   python-coverage
+Requires:   python-fixtures
+Requires:   python-mock
+Requires:   python-oslotest
+Requires:   python-requests-mock
+Requires:   python-os-testr
+Requires:   python-testrepository
+Requires:   python-testtools
+Requires:   python-osprofiler
 
 %description -n python2-%{library}-tests
 osc-lib is a package of common support modules for writing OSC plugins.
@@ -132,6 +141,16 @@ osc-lib is a package of common support modules for writing OSC plugins.
 %package -n python3-%{library}-tests
 Summary:    OpenStack osc-lib library tests
 Requires:   python3-%{library} = %{version}-%{release}
+Requires:   python3-coverage
+Requires:   python3-fixtures
+Requires:   python3-mock
+Requires:   python3-oslotest
+Requires:   python3-requests-mock
+Requires:   python3-os-testr
+Requires:   python3-testrepository
+Requires:   python3-testtools
+Requires:   python3-osprofiler
+
 
 %description -n python3-%{library}-tests
 osc-lib is a package of common support modules for writing OSC plugins.
