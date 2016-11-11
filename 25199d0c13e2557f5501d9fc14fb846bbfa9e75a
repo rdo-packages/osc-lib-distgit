@@ -22,6 +22,30 @@
       "revId": "25199d0c13e2557f5501d9fc14fb846bbfa9e75a",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5adbc538_5a825453",
+        "filename": "python-osc-lib.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2016-11-11T16:00:06Z",
+      "side": 1,
+      "message": "oslotest is in the BuildRequires list.\nfixtures is not, but is in test-requirements.txt, probably we are getting it as nested dependency. I\u0027ll add it as BR.",
+      "parentUuid": "5adbc538_5a4df471",
+      "range": {
+        "startLine": 71,
+        "startChar": 9,
+        "endLine": 71,
+        "endChar": 27
+      },
+      "revId": "25199d0c13e2557f5501d9fc14fb846bbfa9e75a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
