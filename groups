@@ -1,5 +1,5 @@
-# UUID          Group Name
-False 	Non-Interactive Users
-e5621d98d00a375e85826e8358170a07561040a8       	openstack/osc-lib-distgit-core
-50892e7a9dec13e77e84c409ae22dd3ded581877        	openstack/osc-lib-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+50892e7a9dec13e77e84c409ae22dd3ded581877	openstack/osc-lib-distgit-ptl
+e5621d98d00a375e85826e8358170a07561040a8	openstack/osc-lib-distgit-core
+global:Registered-Users                 	Registered Users
