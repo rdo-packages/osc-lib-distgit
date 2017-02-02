@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baada198_df1c8c16",
+        "filename": "python-osc-lib.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-02-02T14:33:40Z",
+      "side": 1,
+      "message": "No change here?",
+      "range": {
+        "startLine": 15,
+        "startChar": 11,
+        "endLine": 15,
+        "endChar": 17
+      },
+      "revId": "3ec051ffe46e5d7e998266c3238d1812b683322d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
