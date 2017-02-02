@@ -12,7 +12,7 @@
 
 Name:       python-%{library}
 Version:    1.1.0
-Release:    2%{?dist}
+Release:    3%{?dist}
 Summary:    OpenStack library for writing OSC plugins
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{library}/
@@ -225,6 +225,10 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
+* Thu Feb 2 2017 Alfredo Moralejo <amoralej@redhat.com> - 1.1.0-3
+- Add requirements to -tests subpackages
+- Add required provides for -tests subpackages
+
 * Mon Sep 12 2016 Haïkel Guémar <hguemar@fedoraproject.org> - 1.1.0-2
 - Removed unneeded BR/R on backports-ssl_match_hostname
 
