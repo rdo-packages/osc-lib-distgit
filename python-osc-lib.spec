@@ -11,8 +11,8 @@
 %global module osc_lib
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    1.3.0
+Release:    1%{?dist}
 Summary:    OpenStack library for writing OSC plugins
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{library}/
@@ -225,3 +225,6 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
+* Wed Feb 08 2017 Alfredo Moralejo <amoralej@redhat.com> 1.3.0-1
+- Update to 1.3.0
+
