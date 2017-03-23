@@ -225,3 +225,4 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/osc-lib/commit/?id=8d3333cc3c55ed1492dec2ea2f1bc9cc4654915d
