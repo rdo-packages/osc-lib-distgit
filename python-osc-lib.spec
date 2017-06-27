@@ -36,7 +36,6 @@ BuildRequires:  python-cliff
 BuildRequires:  python-mock
 BuildRequires:  python-coverage
 BuildRequires:  python-fixtures
-BuildRequires:  python-oslo-sphinx
 BuildRequires:  python-oslotest
 BuildRequires:  python-reno
 BuildRequires:  python-requests-mock
@@ -89,7 +88,7 @@ This package contains the osc-lib library test files.
 Summary:    OpenStack osc-lib library documentation
 
 BuildRequires: python-sphinx
-BuildRequires: python-oslo-sphinx
+BuildRequires: python-openstackdocstheme
 
 %description -n python-%{library}-doc
 osc-lib is a package of common support modules for writing OSC plugins.
@@ -112,7 +111,7 @@ BuildRequires:  python3-cliff
 BuildRequires:  python3-mock
 BuildRequires:  python3-coverage
 BuildRequires:  python3-fixtures
-BuildRequires:  python3-oslo-sphinx
+BuildRequires:  python3-openstackdocstheme
 BuildRequires:  python3-oslotest
 BuildRequires:  python3-reno
 BuildRequires:  python3-requests-mock
@@ -181,9 +180,9 @@ rm -f *requirements.txt
 %endif
 
 # generate html docs
-sphinx-build doc/source html
+%{__python2} setup.py build_sphinx -b html
 # remove the sphinx-build leftovers
-rm -rf html/.{doctrees,buildinfo}
+rm -rf doc/build/html/.{doctrees,buildinfo}
 
 %install
 %py2_install
@@ -210,7 +209,7 @@ rm -rf .testrepository
 
 %files -n python-%{library}-doc
 %license LICENSE
-%doc html README.rst
+%doc doc/build/html README.rst
 
 %if 0%{?with_python3}
 %files -n python3-%{library}
