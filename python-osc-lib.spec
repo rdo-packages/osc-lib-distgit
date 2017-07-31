@@ -34,7 +34,6 @@ BuildRequires:  python-oslo-i18n
 BuildRequires:  python-keystoneauth1
 BuildRequires:  python-cliff
 BuildRequires:  python-mock
-BuildRequires:  python-coverage
 BuildRequires:  python-fixtures
 BuildRequires:  python-oslotest
 BuildRequires:  python-reno
@@ -68,7 +67,6 @@ osc-lib is a package of common support modules for writing OSC plugins.
 Summary:    OpenStack osc-lib library tests
 %{?python_provide:%python_provide python2-%{library}-tests}
 Requires:   python2-%{library} = %{version}-%{release}
-Requires:   python-coverage
 Requires:   python-fixtures
 Requires:   python-mock
 Requires:   python-oslotest
@@ -109,7 +107,6 @@ BuildRequires:  python3-oslo-i18n
 BuildRequires:  python3-keystoneauth1
 BuildRequires:  python3-cliff
 BuildRequires:  python3-mock
-BuildRequires:  python3-coverage
 BuildRequires:  python3-fixtures
 BuildRequires:  python3-openstackdocstheme
 BuildRequires:  python3-oslotest
@@ -144,7 +141,6 @@ osc-lib is a package of common support modules for writing OSC plugins.
 Summary:    OpenStack osc-lib library tests
 %{?python_provide:%python_provide python3-%{library}-tests}
 Requires:   python3-%{library} = %{version}-%{release}
-Requires:   python3-coverage
 Requires:   python3-fixtures
 Requires:   python3-mock
 Requires:   python3-oslotest
