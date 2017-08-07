@@ -47,17 +47,15 @@ BuildRequires:  python-requests
 BuildRequires:  python-simplejson
 BuildRequires:  python-stevedore
 
-Requires:   python-oslo-config >= 2:3.4.0
 Requires:   python-six >= 1.9.0
-Requires:   python-pbr >= 1.6
-Requires:   python-cliff >= 1.15.0
-Requires:   python-keystoneauth1 >= 2.10.0
-Requires:   python-os-client-config >= 1.13.1
+Requires:   python-pbr >= 2.0.0
+Requires:   python-cliff >= 2.8.0
+Requires:   python-keystoneauth1 >= 3.1.0
+Requires:   python-os-client-config >= 1.28.0
 Requires:   python-oslo-i18n >= 2.1.0
-Requires:   python-oslo-utils >= 3.16.0
-Requires:   python-requests >= 2.10.0
+Requires:   python-oslo-utils >= 3.20.0
 Requires:   python-simplejson >= 2.2.0
-Requires:   python-stevedore >= 1.16.0
+Requires:   python-stevedore >= 1.20.0
 
 %description -n python2-%{library}
 osc-lib is a package of common support modules for writing OSC plugins.
@@ -121,17 +119,15 @@ BuildRequires:  python3-simplejson
 BuildRequires:  python3-stevedore
 
 
-Requires:   python3-oslo-config >= 2:3.4.0
 Requires:   python3-six >= 1.9.0
-Requires:   python3-pbr >= 1.6
-Requires:   python3-cliff >= 1.15.0
-Requires:   python3-keystoneauth1 >= 2.10.0
-Requires:   python3-os-client-config >= 1.13.1
+Requires:   python3-pbr >= 2.0.0
+Requires:   python3-cliff >= 2.8.0
+Requires:   python3-keystoneauth1 >= 3.1.0
+Requires:   python3-os-client-config >= 1.28.0
 Requires:   python3-oslo-i18n >= 2.1.0
-Requires:   python3-oslo-utils >= 3.16.0
-Requires:   python3-requests >= 2.10.0
+Requires:   python3-oslo-utils >= 3.20.0
 Requires:   python3-simplejson >= 2.2.0
-Requires:   python3-stevedore >= 1.16.0
+Requires:   python3-stevedore >= 1.20.0
 
 
 %description -n python3-%{library}
