@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_76b4a1f2",
+        "filename": "python-osc-lib.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-08-08T08:10:47Z",
+      "side": 1,
+      "message": "you can remove this also.",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 122,
+        "endChar": 42
+      },
+      "revId": "5669f7d07c7dbb963c0f689e74b259c8221af09f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_96b90dec",
+        "filename": "python-osc-lib.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-08-08T08:10:47Z",
+      "side": 1,
+      "message": "2.0.0",
+      "range": {
+        "startLine": 124,
+        "startChar": 27,
+        "endLine": 124,
+        "endChar": 30
+      },
+      "revId": "5669f7d07c7dbb963c0f689e74b259c8221af09f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_b6cd2989",
+        "filename": "python-osc-lib.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-08-08T08:10:47Z",
+      "side": 1,
+      "message": "This can be removed",
+      "range": {
+        "startLine": 130,
+        "startChar": 0,
+        "endLine": 130,
+        "endChar": 38
+      },
+      "revId": "5669f7d07c7dbb963c0f689e74b259c8221af09f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
