@@ -118,7 +118,7 @@ BuildRequires:  python3-os-client-config
 BuildRequires:  python3-requests
 BuildRequires:  python3-simplejson
 BuildRequires:  python3-stevedore
-
+BuildRequires:  openstack-macros
 
 Requires:   python3-six >= 1.9.0
 Requires:   python3-pbr >= 2.0.0
@@ -164,7 +164,7 @@ This package contains the osc-lib library test files.
 %autosetup -n %{library}-%{upstream_version} -S git
 
 # Let's handle dependencies ourseleves
-rm -f *requirements.txt
+%py_req_cleanup
 
 %build
 %py2_build
