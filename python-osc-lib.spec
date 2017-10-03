@@ -10,6 +10,8 @@
 %global library osc-lib
 %global module osc_lib
 
+%global common_desc osc-lib is a package of common support modules for writing OSC plugins.
+
 Name:       python-%{library}
 Version:    XXX
 Release:    XXX
@@ -58,8 +60,7 @@ Requires:   python-simplejson >= 2.2.0
 Requires:   python-stevedore >= 1.20.0
 
 %description -n python2-%{library}
-osc-lib is a package of common support modules for writing OSC plugins.
-
+%{common_desc}
 
 %package -n python2-%{library}-tests
 Summary:    OpenStack osc-lib library tests
@@ -75,7 +76,7 @@ Requires:   python-testtools
 Requires:   python-osprofiler
 
 %description -n python2-%{library}-tests
-osc-lib is a package of common support modules for writing OSC plugins.
+%{common_desc}
 
 This package contains the osc-lib library test files.
 
@@ -87,7 +88,7 @@ BuildRequires: python-sphinx
 BuildRequires: python-openstackdocstheme
 
 %description -n python-%{library}-doc
-osc-lib is a package of common support modules for writing OSC plugins.
+%{common_desc}
 
 This package contains the documentation.
 
@@ -131,7 +132,7 @@ Requires:   python3-stevedore >= 1.20.0
 
 
 %description -n python3-%{library}
-osc-lib is a package of common support modules for writing OSC plugins.
+%{common_desc}
 
 %package -n python3-%{library}-tests
 Summary:    OpenStack osc-lib library tests
@@ -148,7 +149,7 @@ Requires:   python3-osprofiler
 
 
 %description -n python3-%{library}-tests
-osc-lib is a package of common support modules for writing OSC plugins.
+%{common_desc}
 
 This package contains the osc-lib library test files.
 
@@ -156,7 +157,7 @@ This package contains the osc-lib library test files.
 
 
 %description
-osc-lib is a package of common support modules for writing OSC plugins.
+%{common_desc}
 
 
 %prep
