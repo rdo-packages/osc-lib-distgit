@@ -45,6 +45,7 @@ BuildRequires:  python-testtools
 BuildRequires:  python-osprofiler
 BuildRequires:  python-oslo-utils
 BuildRequires:  python-os-client-config
+BuildRequires:  python-openstacksdk
 BuildRequires:  python-requests
 BuildRequires:  python-simplejson
 BuildRequires:  python-stevedore
@@ -53,6 +54,7 @@ Requires:   python-six >= 1.9.0
 Requires:   python-pbr >= 2.0.0
 Requires:   python-cliff >= 2.8.0
 Requires:   python-keystoneauth1 >= 3.1.0
+Requires:   python-openstacksdk >= 0.9.19
 Requires:   python-os-client-config >= 1.28.0
 Requires:   python-oslo-i18n >= 2.1.0
 Requires:   python-oslo-utils >= 3.20.0
@@ -115,6 +117,7 @@ BuildRequires:  python3-os-testr
 BuildRequires:  python3-testtools
 BuildRequires:  python3-oslo-utils
 BuildRequires:  python3-os-client-config
+BuildRequires:  python3-openstacksdk
 BuildRequires:  python3-requests
 BuildRequires:  python3-simplejson
 BuildRequires:  python3-stevedore
@@ -146,6 +149,7 @@ Requires:   python3-os-testr
 Requires:   python3-testrepository
 Requires:   python3-testtools
 Requires:   python3-osprofiler
+Requires:   python3-openstacksdk >= 0.9.19
 
 
 %description -n python3-%{library}-tests
