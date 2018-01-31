@@ -28,38 +28,50 @@ Summary:    OpenStack library for writing OSC plugins
 %{?python_provide:%python_provide python2-%{library}}
 
 BuildRequires:  python2-devel
-BuildRequires:  python-pbr
-BuildRequires:  python-setuptools
+BuildRequires:  python2-pbr
+BuildRequires:  python2-setuptools
 BuildRequires:  git
-BuildRequires:  python-testrepository
-BuildRequires:  python-oslo-i18n
-BuildRequires:  python-keystoneauth1
+BuildRequires:  python2-oslo-i18n
+BuildRequires:  python2-keystoneauth1
+BuildRequires:  python2-mock
+BuildRequires:  python2-fixtures
+BuildRequires:  python2-oslotest
+BuildRequires:  python2-reno
+BuildRequires:  python2-os-testr
+BuildRequires:  python2-testtools
+BuildRequires:  python2-osprofiler
+BuildRequires:  python2-oslo-utils
+BuildRequires:  python2-os-client-config
+BuildRequires:  python2-openstacksdk
+BuildRequires:  python2-requests
+BuildRequires:  python2-stevedore
+%if 0%{?fedora} > 0
+BuildRequires:  python2-cliff
+BuildRequires:  python2-simplejson
+BuildRequires:  python2-testrepository
+BuildRequires:  python2-requests-mock
+%else
 BuildRequires:  python-cliff
-BuildRequires:  python-mock
-BuildRequires:  python-fixtures
-BuildRequires:  python-oslotest
-BuildRequires:  python-reno
-BuildRequires:  python-requests-mock
-BuildRequires:  python-os-testr
-BuildRequires:  python-testtools
-BuildRequires:  python-osprofiler
-BuildRequires:  python-oslo-utils
-BuildRequires:  python-os-client-config
-BuildRequires:  python-openstacksdk
-BuildRequires:  python-requests
 BuildRequires:  python-simplejson
-BuildRequires:  python-stevedore
+BuildRequires:  python-testrepository
+BuildRequires:  python-requests-mock
+%endif
 
-Requires:   python-six >= 1.9.0
-Requires:   python-pbr >= 2.0.0
+Requires:   python2-six >= 1.10.0
+Requires:   python2-pbr >= 2.0.0
+Requires:   python2-keystoneauth1 >= 3.3.0
+Requires:   python2-openstacksdk >= 0.9.19
+Requires:   python2-os-client-config >= 1.28.0
+Requires:   python2-oslo-i18n >= 3.15.3
+Requires:   python2-oslo-utils >= 3.33.0
+Requires:   python2-stevedore >= 1.20.0
+%if 0%{?fedora} > 0
+Requires:   python2-cliff >= 2.8.0
+Requires:   python2-simplejson >= 3.5.1
+%else
 Requires:   python-cliff >= 2.8.0
-Requires:   python-keystoneauth1 >= 3.1.0
-Requires:   python-openstacksdk >= 0.9.19
-Requires:   python-os-client-config >= 1.28.0
-Requires:   python-oslo-i18n >= 2.1.0
-Requires:   python-oslo-utils >= 3.20.0
-Requires:   python-simplejson >= 2.2.0
-Requires:   python-stevedore >= 1.20.0
+Requires:   python-simplejson >= 3.5.1
+%endif
 
 %description -n python2-%{library}
 %{common_desc}
@@ -68,14 +80,19 @@ Requires:   python-stevedore >= 1.20.0
 Summary:    OpenStack osc-lib library tests
 %{?python_provide:%python_provide python2-%{library}-tests}
 Requires:   python2-%{library} = %{version}-%{release}
-Requires:   python-fixtures
-Requires:   python-mock
-Requires:   python-oslotest
+Requires:   python2-fixtures
+Requires:   python2-mock
+Requires:   python2-oslotest
+Requires:   python2-os-testr
+Requires:   python2-testtools
+Requires:   python2-osprofiler
+%if 0%{?fedora} > 0
+Requires:   python2-requests-mock
+Requires:   python2-testrepository
+%else
 Requires:   python-requests-mock
-Requires:   python-os-testr
 Requires:   python-testrepository
-Requires:   python-testtools
-Requires:   python-osprofiler
+%endif
 
 %description -n python2-%{library}-tests
 %{common_desc}
@@ -86,8 +103,8 @@ This package contains the osc-lib library test files.
 %package -n python-%{library}-doc
 Summary:    OpenStack osc-lib library documentation
 
-BuildRequires: python-sphinx
-BuildRequires: python-openstackdocstheme
+BuildRequires: python2-sphinx
+BuildRequires: python2-openstackdocstheme
 
 %description -n python-%{library}-doc
 %{common_desc}
@@ -123,14 +140,14 @@ BuildRequires:  python3-simplejson
 BuildRequires:  python3-stevedore
 
 
-Requires:   python3-six >= 1.9.0
+Requires:   python3-six >= 1.10.0
 Requires:   python3-pbr >= 2.0.0
 Requires:   python3-cliff >= 2.8.0
-Requires:   python3-keystoneauth1 >= 3.1.0
+Requires:   python3-keystoneauth1 >= 3.3.0
 Requires:   python3-os-client-config >= 1.28.0
-Requires:   python3-oslo-i18n >= 2.1.0
-Requires:   python3-oslo-utils >= 3.20.0
-Requires:   python3-simplejson >= 2.2.0
+Requires:   python3-oslo-i18n >= 3.15.3
+Requires:   python3-oslo-utils >= 3.33.0
+Requires:   python3-simplejson >= 3.5.1
 Requires:   python3-stevedore >= 1.20.0
 
 
