@@ -13,8 +13,8 @@
 %global common_desc osc-lib is a package of common support modules for writing OSC plugins.
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    1.9.0
+Release:    1%{?dist}
 Summary:    OpenStack library for writing OSC plugins
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{library}/
@@ -238,3 +238,6 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
+* Sun Feb 11 2018 RDO <dev@lists.rdoproject.org> 1.9.0-1
+- Update to 1.9.0
+
