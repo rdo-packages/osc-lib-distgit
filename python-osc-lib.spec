@@ -11,7 +11,7 @@
 %global module osc_lib
 
 Name:       python-%{library}
-Version:    1.3.0
+Version:    1.3.1
 Release:    1%{?dist}
 Summary:    OpenStack library for writing OSC plugins
 License:    ASL 2.0
@@ -225,6 +225,9 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
+* Wed Apr 18 2018 RDO <dev@lists.rdoproject.org> 1.3.1-1
+- Update to 1.3.1
+
 * Wed Feb 08 2017 Alfredo Moralejo <amoralej@redhat.com> 1.3.0-1
 - Update to 1.3.0
 
