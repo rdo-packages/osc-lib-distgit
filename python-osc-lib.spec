@@ -11,6 +11,7 @@
 %global module osc_lib
 
 %global common_desc osc-lib is a package of common support modules for writing OSC plugins.
+%global with_doc 1
 
 Name:       python-%{library}
 Version:    XXX
@@ -99,7 +100,7 @@ Requires:   python-testrepository
 
 This package contains the osc-lib library test files.
 
-
+%if 0%{?with_doc}
 %package -n python-%{library}-doc
 Summary:    OpenStack osc-lib library documentation
 
@@ -111,6 +112,7 @@ BuildRequires: python2-sphinxcontrib-apidoc
 %{common_desc}
 
 This package contains the documentation.
+%endif
 
 %if 0%{?with_python3}
 %package -n python3-%{library}
@@ -194,11 +196,13 @@ rm -f *requirements.txt
 %py3_build
 %endif
 
+%if 0%{?with_doc}
 # generate html docs
 export PYTHONPATH=.
 sphinx-build -b html doc/source doc/build/html
 # remove the sphinx-build leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
+%endif
 
 %install
 %py2_install
@@ -223,9 +227,11 @@ rm -rf .testrepository
 %license LICENSE
 %{python2_sitelib}/%{module}/tests
 
+%if 0%{?with_doc}
 %files -n python-%{library}-doc
 %license LICENSE
 %doc doc/build/html README.rst
+%endif
 
 %if 0%{?with_python3}
 %files -n python3-%{library}
