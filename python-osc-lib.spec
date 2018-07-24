@@ -60,8 +60,8 @@ BuildRequires:  python-requests-mock
 
 Requires:   python2-six >= 1.10.0
 Requires:   python2-pbr >= 2.0.0
-Requires:   python2-keystoneauth1 >= 3.3.0
-Requires:   python2-openstacksdk >= 0.9.19
+Requires:   python2-keystoneauth1 >= 3.7.0
+Requires:   python2-openstacksdk >= 0.15.0
 Requires:   python2-os-client-config >= 1.28.0
 Requires:   python2-oslo-i18n >= 3.15.3
 Requires:   python2-oslo-utils >= 3.33.0
@@ -146,7 +146,7 @@ BuildRequires:  python3-stevedore
 Requires:   python3-six >= 1.10.0
 Requires:   python3-pbr >= 2.0.0
 Requires:   python3-cliff >= 2.8.0
-Requires:   python3-keystoneauth1 >= 3.3.0
+Requires:   python3-keystoneauth1 >= 3.7.0
 Requires:   python3-os-client-config >= 1.28.0
 Requires:   python3-oslo-i18n >= 3.15.3
 Requires:   python3-oslo-utils >= 3.33.0
@@ -169,7 +169,7 @@ Requires:   python3-os-testr
 Requires:   python3-testrepository
 Requires:   python3-testtools
 Requires:   python3-osprofiler
-Requires:   python3-openstacksdk >= 0.9.19
+Requires:   python3-openstacksdk >= 0.15.0
 
 
 %description -n python3-%{library}-tests
