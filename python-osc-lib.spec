@@ -14,7 +14,7 @@
 %global with_doc 1
 
 Name:       python-%{library}
-Version:    1.11.0
+Version:    1.11.1
 Release:    1%{?dist}
 Summary:    OpenStack library for writing OSC plugins
 License:    ASL 2.0
@@ -246,6 +246,9 @@ rm -rf .testrepository
 %endif # with_python3
 
 %changelog
+* Wed Aug 15 2018 RDO <dev@lists.rdoproject.org> 1.11.1-1
+- Update to 1.11.1
+
 * Thu Aug 09 2018 RDO <dev@lists.rdoproject.org> 1.11.0-1
 - Update to 1.11.0
 
