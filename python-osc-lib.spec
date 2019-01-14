@@ -1,8 +1,6 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
-# Python3 support in OpenStack starts with version 3.5,
-# which is only in Fedora 24+
-%if 0%{?fedora} >= 24
+%if 0%{?fedora} || 0%{?rhel} > 7
 %global with_python3 1
 %endif
 
@@ -46,7 +44,7 @@ BuildRequires:  python2-os-client-config
 BuildRequires:  python2-openstacksdk
 BuildRequires:  python2-requests
 BuildRequires:  python2-stevedore
-%if 0%{?fedora} > 0
+%if 0%{?fedora} || 0%{?rhel} > 7
 BuildRequires:  python2-cliff
 BuildRequires:  python2-simplejson
 BuildRequires:  python2-testrepository
@@ -66,7 +64,7 @@ Requires:   python2-os-client-config >= 1.28.0
 Requires:   python2-oslo-i18n >= 3.15.3
 Requires:   python2-oslo-utils >= 3.33.0
 Requires:   python2-stevedore >= 1.20.0
-%if 0%{?fedora} > 0
+%if 0%{?fedora} || 0%{?rhel} > 7
 Requires:   python2-cliff >= 2.8.0
 Requires:   python2-simplejson >= 3.5.1
 %else
@@ -87,7 +85,7 @@ Requires:   python2-oslotest
 Requires:   python2-os-testr
 Requires:   python2-testtools
 Requires:   python2-osprofiler
-%if 0%{?fedora} > 0
+%if 0%{?fedora} || 0%{?rhel} > 7
 Requires:   python2-requests-mock
 Requires:   python2-testrepository
 %else
