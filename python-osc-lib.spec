@@ -124,7 +124,6 @@ BuildRequires:  python3-keystoneauth1
 BuildRequires:  python3-cliff
 BuildRequires:  python3-mock
 BuildRequires:  python3-fixtures
-BuildRequires:  python3-openstackdocstheme
 BuildRequires:  python3-oslotest
 BuildRequires:  python3-reno
 BuildRequires:  python3-requests-mock
