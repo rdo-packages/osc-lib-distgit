@@ -13,7 +13,7 @@
 
 Name:       python-%{library}
 Version:    1.12.1
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    OpenStack library for writing OSC plugins
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{library}/
@@ -162,7 +162,6 @@ Requires:   python3-requests-mock
 Requires:   python3-os-testr
 Requires:   python3-testrepository
 Requires:   python3-testtools
-Requires:   python3-osprofiler
 Requires:   python3-openstacksdk >= 0.15.0
 
 %description -n python3-%{library}-tests
@@ -239,6 +238,9 @@ PYTHON=python2 %{__python2} setup.py test
 %endif # with_python3
 
 %changelog
+* Thu May 09 2019 Alfredo Moralejo <amoralej@lists.rdoproject.org> 1.12.1-2
+- Remove osprofile as requirement for tests subpackage.
+
 * Fri Mar 08 2019 RDO <dev@lists.rdoproject.org> 1.12.1-1
 - Update to 1.12.1
 
