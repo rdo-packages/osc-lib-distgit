@@ -162,7 +162,6 @@ Requires:   python3-requests-mock
 Requires:   python3-os-testr
 Requires:   python3-testrepository
 Requires:   python3-testtools
-Requires:   python3-osprofiler
 Requires:   python3-openstacksdk >= 0.15.0
 
 %description -n python3-%{library}-tests
