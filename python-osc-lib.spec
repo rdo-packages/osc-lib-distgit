@@ -111,7 +111,7 @@ This package contains the documentation.
 
 %if 0%{?with_python3}
 %package -n python3-%{library}
-Summary:    OpenStack Example library
+Summary:    OpenStack library for writing OSC plugins
 %{?python_provide:%python_provide python3-%{library}}
 
 BuildRequires:  python3-devel
