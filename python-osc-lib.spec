@@ -238,3 +238,4 @@ PYTHON=python2 %{__python2} setup.py test
 %endif # with_python3
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/osc-lib/commit/?id=6db6492a7de5f7a3e09473c31e23e03d10f420b6
