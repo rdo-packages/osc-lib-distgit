@@ -56,9 +56,8 @@ BuildRequires:  python%{pyver}-simplejson
 
 Requires:   python%{pyver}-six >= 1.10.0
 Requires:   python%{pyver}-pbr >= 2.0.0
-Requires:   python%{pyver}-keystoneauth1 >= 3.7.0
+Requires:   python%{pyver}-keystoneauth1 >= 3.14.0
 Requires:   python%{pyver}-openstacksdk >= 0.15.0
-Requires:   python%{pyver}-os-client-config >= 1.28.0
 Requires:   python%{pyver}-oslo-i18n >= 3.15.3
 Requires:   python%{pyver}-oslo-utils >= 3.33.0
 Requires:   python%{pyver}-stevedore >= 1.20.0
