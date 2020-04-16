@@ -1,14 +1,3 @@
-# Macros for py2/py3 compatibility
-%if 0%{?fedora} || 0%{?rhel} > 7
-%global pyver %{python3_pkgversion}
-%else
-%global pyver 2
-%endif
-%global pyver_bin python%{pyver}
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
-# End of macros for py2/py3 compatibility
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
@@ -29,58 +18,58 @@ Source0:    https://tarballs.openstack.org/%{library}/%{library}-%{upstream_vers
 
 BuildArch:  noarch
 
-%package -n python%{pyver}-%{library}
+%package -n python3-%{library}
 Summary:    OpenStack library for writing OSC plugins
-%{?python_provide:%python_provide python%{pyver}-%{library}}
+%{?python_provide:%python_provide python3-%{library}}
 
-BuildRequires:  python%{pyver}-devel
-BuildRequires:  python%{pyver}-pbr
-BuildRequires:  python%{pyver}-setuptools
+BuildRequires:  python3-devel
+BuildRequires:  python3-pbr
+BuildRequires:  python3-setuptools
 BuildRequires:  git
-BuildRequires:  python%{pyver}-oslo-i18n
-BuildRequires:  python%{pyver}-keystoneauth1
-BuildRequires:  python%{pyver}-mock
-BuildRequires:  python%{pyver}-fixtures
-BuildRequires:  python%{pyver}-oslotest
-BuildRequires:  python%{pyver}-os-testr
-BuildRequires:  python%{pyver}-testtools
-BuildRequires:  python%{pyver}-oslo-utils
-BuildRequires:  python%{pyver}-os-client-config
-BuildRequires:  python%{pyver}-openstacksdk
-BuildRequires:  python%{pyver}-requests
-BuildRequires:  python%{pyver}-stevedore
-BuildRequires:  python%{pyver}-cliff
-BuildRequires:  python%{pyver}-testrepository
-BuildRequires:  python%{pyver}-requests-mock
-BuildRequires:  python%{pyver}-simplejson
+BuildRequires:  python3-oslo-i18n
+BuildRequires:  python3-keystoneauth1
+BuildRequires:  python3-mock
+BuildRequires:  python3-fixtures
+BuildRequires:  python3-oslotest
+BuildRequires:  python3-os-testr
+BuildRequires:  python3-testtools
+BuildRequires:  python3-oslo-utils
+BuildRequires:  python3-os-client-config
+BuildRequires:  python3-openstacksdk
+BuildRequires:  python3-requests
+BuildRequires:  python3-stevedore
+BuildRequires:  python3-cliff
+BuildRequires:  python3-testrepository
+BuildRequires:  python3-requests-mock
+BuildRequires:  python3-simplejson
 
-Requires:   python%{pyver}-six >= 1.10.0
-Requires:   python%{pyver}-pbr >= 2.0.0
-Requires:   python%{pyver}-keystoneauth1 >= 3.14.0
-Requires:   python%{pyver}-openstacksdk >= 0.15.0
-Requires:   python%{pyver}-oslo-i18n >= 3.15.3
-Requires:   python%{pyver}-oslo-utils >= 3.33.0
-Requires:   python%{pyver}-stevedore >= 1.20.0
-Requires:   python%{pyver}-cliff >= 2.8.0
-Requires:   python%{pyver}-simplejson >= 3.5.1
+Requires:   python3-six >= 1.10.0
+Requires:   python3-pbr >= 2.0.0
+Requires:   python3-keystoneauth1 >= 3.14.0
+Requires:   python3-openstacksdk >= 0.15.0
+Requires:   python3-oslo-i18n >= 3.15.3
+Requires:   python3-oslo-utils >= 3.33.0
+Requires:   python3-stevedore >= 1.20.0
+Requires:   python3-cliff >= 2.8.0
+Requires:   python3-simplejson >= 3.5.1
 
-%description -n python%{pyver}-%{library}
+%description -n python3-%{library}
 %{common_desc}
 
-%package -n python%{pyver}-%{library}-tests
+%package -n python3-%{library}-tests
 Summary:    OpenStack osc-lib library tests
-%{?python_provide:%python_provide python%{pyver}-%{library}-tests}
+%{?python_provide:%python_provide python3-%{library}-tests}
 
-Requires:   python%{pyver}-%{library} = %{version}-%{release}
-Requires:   python%{pyver}-fixtures
-Requires:   python%{pyver}-mock
-Requires:   python%{pyver}-oslotest
-Requires:   python%{pyver}-os-testr
-Requires:   python%{pyver}-testtools
-Requires:   python%{pyver}-requests-mock
-Requires:   python%{pyver}-testrepository
+Requires:   python3-%{library} = %{version}-%{release}
+Requires:   python3-fixtures
+Requires:   python3-mock
+Requires:   python3-oslotest
+Requires:   python3-os-testr
+Requires:   python3-testtools
+Requires:   python3-requests-mock
+Requires:   python3-testrepository
 
-%description -n python%{pyver}-%{library}-tests
+%description -n python3-%{library}-tests
 %{common_desc}
 
 This package contains the osc-lib library test files.
@@ -89,9 +78,9 @@ This package contains the osc-lib library test files.
 %package -n python-%{library}-doc
 Summary:    OpenStack osc-lib library documentation
 
-BuildRequires: python%{pyver}-sphinx
-BuildRequires: python%{pyver}-openstackdocstheme
-BuildRequires: python%{pyver}-sphinxcontrib-apidoc
+BuildRequires: python3-sphinx
+BuildRequires: python3-openstackdocstheme
+BuildRequires: python3-sphinxcontrib-apidoc
 
 %description -n python-%{library}-doc
 %{common_desc}
@@ -110,31 +99,31 @@ This package contains the documentation.
 rm -f *requirements.txt
 
 %build
-%{pyver_build}
+%{py3_build}
 
 %if 0%{?with_doc}
 # generate html docs
 export PYTHONPATH=.
-sphinx-build-%{pyver} -b html doc/source doc/build/html
-# remove the sphinx-build-%{pyver} leftovers
+sphinx-build-3 -b html doc/source doc/build/html
+# remove the sphinx-build-3 leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %install
-%{pyver_install}
+%{py3_install}
 
 %check
-PYTHON=python%{pyver} %{pyver_bin} setup.py test
+PYTHON=%{__python3} %{__python3} setup.py test
 
-%files -n python%{pyver}-%{library}
+%files -n python3-%{library}
 %license LICENSE
-%{pyver_sitelib}/%{module}
-%{pyver_sitelib}/%{module}-*.egg-info
-%exclude %{pyver_sitelib}/%{module}/tests
+%{python3_sitelib}/%{module}
+%{python3_sitelib}/%{module}-*.egg-info
+%exclude %{python3_sitelib}/%{module}/tests
 
-%files -n python%{pyver}-%{library}-tests
+%files -n python3-%{library}-tests
 %license LICENSE
-%{pyver_sitelib}/%{module}/tests
+%{python3_sitelib}/%{module}/tests
 
 %if 0%{?with_doc}
 %files -n python-%{library}-doc
