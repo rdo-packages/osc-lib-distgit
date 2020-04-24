@@ -8,8 +8,8 @@
 %global with_doc 1
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    2.0.0
+Release:    1%{?dist}
 Summary:    OpenStack library for writing OSC plugins
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{library}/
@@ -132,3 +132,6 @@ PYTHON=%{__python3} %{__python3} setup.py test
 %endif
 
 %changelog
+* Fri Apr 24 2020 RDO <dev@lists.rdoproject.org> 2.0.0-1
+- Update to 2.0.0
+
