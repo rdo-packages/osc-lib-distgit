@@ -30,8 +30,7 @@ BuildRequires:  python3-oslo-i18n
 BuildRequires:  python3-keystoneauth1
 BuildRequires:  python3-mock
 BuildRequires:  python3-fixtures
-BuildRequires:  python3-oslotest
-BuildRequires:  python3-os-testr
+BuildRequires:  python3-stestr
 BuildRequires:  python3-testtools
 BuildRequires:  python3-oslo-utils
 BuildRequires:  python3-os-client-config
@@ -39,7 +38,6 @@ BuildRequires:  python3-openstacksdk
 BuildRequires:  python3-requests
 BuildRequires:  python3-stevedore
 BuildRequires:  python3-cliff
-BuildRequires:  python3-testrepository
 BuildRequires:  python3-requests-mock
 BuildRequires:  python3-simplejson
 
@@ -63,11 +61,9 @@ Summary:    OpenStack osc-lib library tests
 Requires:   python3-%{library} = %{version}-%{release}
 Requires:   python3-fixtures
 Requires:   python3-mock
-Requires:   python3-oslotest
-Requires:   python3-os-testr
+Requires:   python3-stestr
 Requires:   python3-testtools
 Requires:   python3-requests-mock
-Requires:   python3-testrepository
 
 %description -n python3-%{library}-tests
 %{common_desc}
@@ -113,7 +109,7 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %{py3_install}
 
 %check
-PYTHON=%{__python3} %{__python3} setup.py test
+PYTHON=%{__python3} stestr run
 
 %files -n python3-%{library}
 %license LICENSE
