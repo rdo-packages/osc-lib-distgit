@@ -41,14 +41,13 @@ BuildRequires:  python3-cliff
 BuildRequires:  python3-requests-mock
 BuildRequires:  python3-simplejson
 
-Requires:   python3-six >= 1.10.0
 Requires:   python3-pbr >= 2.0.0
 Requires:   python3-keystoneauth1 >= 3.14.0
 Requires:   python3-openstacksdk >= 0.15.0
 Requires:   python3-oslo-i18n >= 3.15.3
 Requires:   python3-oslo-utils >= 3.33.0
 Requires:   python3-stevedore >= 1.20.0
-Requires:   python3-cliff >= 2.8.0
+Requires:   python3-cliff >= 3.2.0
 Requires:   python3-simplejson >= 3.5.1
 
 %description -n python3-%{library}
