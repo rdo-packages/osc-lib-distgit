@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "d3c6d0ed731b72f449d0fc47e48cee44002a369d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd26d2e7_276b7854",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-03-15T07:26:00Z",
+      "side": 1,
+      "message": "recheck had to cbs untag-build cloud8s-openstack-yoga-el8-build python-cliff-2.16.0-2.el8",
+      "revId": "d3c6d0ed731b72f449d0fc47e48cee44002a369d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
