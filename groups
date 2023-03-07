@@ -1,9 +1,9 @@
 # UUID Group Name
 global:Registered-Users	Registered Users
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Service Users
-global:Anonymous-Users	Anonymous Users
+a183612de82d81c8cbb968fa5751779677d72298	openstack/osc-lib-ptl
 4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
 05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
-a183612de82d81c8cbb968fa5751779677d72298	openstack/osc-lib-ptl
-401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Service Users
 24eb5e8c09e1bf0f2099138c96dc55d943d20fe7	openstack/osc-lib-core
+401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+global:Anonymous-Users	Anonymous Users
