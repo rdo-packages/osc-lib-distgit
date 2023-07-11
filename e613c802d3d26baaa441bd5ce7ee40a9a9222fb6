@@ -46,6 +46,30 @@
       },
       "revId": "e613c802d3d26baaa441bd5ce7ee40a9a9222fb6",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e946de9_334dffa5",
+        "filename": "python-osc-lib.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-07-11T08:30:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a98d2299_c48206b6",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 20
+      },
+      "revId": "e613c802d3d26baaa441bd5ce7ee40a9a9222fb6",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
