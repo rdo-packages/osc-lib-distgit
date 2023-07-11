@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8d62899_73ae8279",
+        "filename": "python-osc-lib.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-07-11T08:24:45Z",
+      "side": 1,
+      "message": "this is adding automatically osprofiler as BR althought it\u0027s just optional. This will be a problem for rebuilding in fedora, so, I think we should add it to excluded_brs",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 20
+      },
+      "revId": "e613c802d3d26baaa441bd5ce7ee40a9a9222fb6",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
