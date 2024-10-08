@@ -8,6 +8,10 @@
 %if ! 0%{?with_doc}
 %global excluded_brs %{excluded_brs} sphinx openstackdocstheme
 %endif
+# Exclude some BRs for Fedora
+%if 0%{?fedora}
+%global excluded_brs %{excluded_brs} osprofiler
+%endif
 
 %global library osc-lib
 %global module osc_lib
