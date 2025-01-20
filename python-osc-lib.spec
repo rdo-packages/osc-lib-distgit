@@ -56,7 +56,6 @@ Summary:    OpenStack osc-lib library tests
 
 Requires:   python3-%{library} = %{version}-%{release}
 Requires:   python3-fixtures
-Requires:   python3-mock
 Requires:   python3-stestr
 Requires:   python3-testtools
 Requires:   python3-requests-mock
